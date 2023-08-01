@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//COMMENT
 struct ContentView: View {
     var body: some View {
         
@@ -14,7 +14,7 @@ struct ContentView: View {
         ZStack {
             Color(.systemPink)
                 .ignoresSafeArea()
-            VStack(spacing: 30.0) {
+            VStack(spacing: 30) {
                 Text("About Me: Elaha Moosa!")
                     .font(.headline)
                     .fontWeight(.heavy)
@@ -23,10 +23,14 @@ struct ContentView: View {
                     .aspectRatio(contentMode: .fit)
                     .padding([.leading, .bottom, .trailing])
                     .shadow(radius: 50)
-                
+                Button("Click me") {
+                } .font(.title3)
+                    .buttonStyle(.borderedProminent)
+                    .tint(.pink) 
+    
             }
             .padding(.horizontal)
-            .background(Rectangle().foregroundColor(Color(red: 0.992, green: 0.768, blue: 0.794)).cornerRadius(/*@START_MENU_TOKEN@*/30.0/*@END_MENU_TOKEN@*/))
+            .background(Rectangle().frame(width: /*@START_MENU_TOKEN@*/350.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/550.0/*@END_MENU_TOKEN@*/).foregroundColor(Color(red: 0.992, green: 0.768, blue: 0.794)).cornerRadius(/*@START_MENU_TOKEN@*/30.0/*@END_MENU_TOKEN@*/))
                                 
                                 }
             
